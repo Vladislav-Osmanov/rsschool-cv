@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'ArialMT';
+    src: local('Arial-Regular'),
+        url(../fonts/ArialMT.woff2) format('woff2'),
+        url(../fonts/ArialMT.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: local('GeorgiaRegular'),
+        url(../fonts/Georgia.woff2) format('woff2'),
+        url(../fonts/Georgia.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: local('GeorgiaItalic'),
+        url(../fonts/GeorgiaItalic.woff2) format('woff2'),
+        url(../fonts/GeorgiaItalic.woff) format('woff');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: local('GeorgiaBold'),
+        url(../fonts/GeorgiaBold.woff2) format('woff2'),
+        url(../fonts/GeorgiaBold.woff) format('woff');
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --color-primari: #F1CDB3;
+    --color-primari-light: #FDDCC4;
+    --color-light: #FFFFFF;
+    --color-dark: #CDCDCD;
+    --color-darks: #292929;
+}
+
+body {
+    background-color: #E5E5E5;
+    min-width: 320px;
+    font-family: 'Georgia', 'ArialMT', sans-serif;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bth-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.container__header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.container__stile {
+    padding-top: 30px;
+    background: url(noise_lines_transparent@2X), radial-gradient(234.05% 111.80% at 0% 0%, rgb(91, 72, 58), rgb(38, 36, 37) 100%), rgb(33, 31, 32)
+}
+
+.header__links {
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed var(--color-light);
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
+.text__link {
+    font-family: Georgia;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 110%;
+    margin-bottom: 10px;
+    color: var(--color-primari);
+}
+
+.text__links {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 1px;
+    color: var(--color-light);
+}
+
+.header__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link__heads {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    color: var(--color-light);
+}
+
+.header__item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.main__block {
+    display: flex;
+    border: 1px dashed var(--color-light);
+    border-bottom: none;
+}
+
+.main__wrapp {
+    padding-top: 160px;
+    display: flex;
+    max-width: 502px;
+    margin-right: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    width: 305px;
+    font-family: Georgia;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--color-light);
+}
+
+.text {
+    width: 430px;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 40px;
+    color: var(--color-dark);
+}
+
+.btn-main {
+    padding: 15px 45px;
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    color: var(--color-darks);
+    background-color: var(--color-primari);
+}
+
+.img__main {
+    border-left: 1px dashed var(--color-light);
+}
